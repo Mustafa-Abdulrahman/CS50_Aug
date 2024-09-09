@@ -1,0 +1,465 @@
+/* GloBAL Style */
+
+:root {
+    --main-padding: 16px;
+    --main-margin: 16px;
+    --main-transition: 0.2s;
+    --main-gap: 16px
+}
+
+* {
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    transition: var(--main-transition);
+    user-select: none
+}
+
+a {
+    text-decoration: none;
+    color: black;
+
+}
+
+ul {
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+body {
+    line-height: 1.5;
+    font-family: "poppin", sans-serif;
+}
+
+img {
+    width: 100%;
+    vertical-align: middle
+}
+
+
+
+.container {
+    width: 85% !important;
+    margin: 0 auto;
+}
+
+.section {
+    padding: 40px 0
+}
+
+/* GloBAL Style */
+
+/* Start Nav */
+.nav {
+    background-color: white;
+}
+
+.nav .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.nav .container .parent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--main-gap);
+}
+
+.nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.nav .container .parent .img {
+    width: 100px
+}
+
+.nav ul li a {
+    display: block;
+    padding: var(--main-padding);
+    transition: var(--main-transition)
+}
+
+.nav ul li a:hover {
+    background-color: black;
+    color: white;
+
+}
+
+
+.nav ul li a.sign {
+    background-color: black;
+    color: white
+}
+
+.nav ul li a.sign:hover {
+    background-color: rgb(84, 84, 84);
+
+}
+
+/* End Nav */
+
+/* Start Landing */
+.landing {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgba(42, 42, 42, 0.5), rgba(42, 42, 42, 0.5)), url("./Images/Montage-Beverly-Hills.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+/* .landing::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(105, 105, 105, 0.56);
+    z-index: 0;
+
+} */
+
+.landing .child {
+    width: 70%;
+    text-align: center;
+    /* position: relative;
+    z-index: 2; */
+    color: white;
+    padding: var(--main-padding);
+    /* box-shadow: 0 0 10px 0 black */
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+.landing .child h1 {}
+
+.landing .child p {
+    margin: var(--main-margin) 0
+}
+
+.landing .child button {
+    padding: var(--main-padding) calc(var(--main-padding) * 3);
+    background-color: transparent;
+    color: white;
+    border: 1px solid white
+}
+
+/* End Landing */
+
+/* Start Card */
+.cards {}
+
+.cards .container {
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; */
+    /* display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(calc((100% / 3) - (32px / 3)), 1fr)); */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--main-gap);
+    flex-wrap: wrap;
+}
+
+
+.cards .container .box {
+    /* width: 300px; */
+    /* flex-grow: 1; */
+    width: calc((100% / 3) - (32px / 3));
+    border: 1px solid gray;
+    cursor: pointer
+}
+
+
+
+.cards .container .box .content {
+    padding: var(--main-padding)
+}
+
+
+
+.cards .container .box .content p {
+    margin: var(--main-margin) 0
+}
+
+.cards .container .box .content .spans {
+    padding-top: var(--main-padding);
+    border-top: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.app {
+    background-color: rgb(220, 220, 220);
+}
+
+.app .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--main-gap)
+}
+
+
+
+/* end Card */
+
+/* Start Booking */
+.booking {
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Images/banner.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.booking .content {
+    text-align: center;
+    color: white
+}
+
+.booking .content h2 {
+    margin: var(--main-margin) 0
+}
+
+.booking .content h2 span {
+    color: red
+}
+
+.booking .content button {
+    background-color: transparent;
+    color: white;
+    padding: var(--main-padding) calc(var(--main-padding) * 3);
+    border: 1px solid white
+}
+
+.deals .container .box-container {
+    display: flex;
+    align-items: Center;
+    justify-content: space-between;
+    gap: var(--main-gap);
+    margin-bottom: var(--main-margin);
+    flex-flow: wrap;
+}
+
+.deals .container .box-container .box {
+    height: 40vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.51), rgba(0, 0, 0, 0.51)), url("./Images/05.jpg");
+    ;
+
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: var(--main-padding)
+}
+
+.deals .container .box-container .first {
+    width: calc((100% / 2) - (16px / 2))
+}
+
+.deals .container .box-container .secount {
+    width: calc((100% / 3) - (32px / 3))
+}
+
+.deals .container .box-container .box button {
+    display: block;
+    padding: var(--main-padding) calc(var(--main-padding) * 3);
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    margin: var(--main-margin) 0
+}
+
+/* End Booking */
+
+/* Start Footer */
+.footer {
+    background-color: black;
+    color: white;
+}
+
+.footer .container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: var(--main-gap);
+    margin-bottom: var(--main-margin);
+}
+
+.footer .container ul .title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-bottom: var(--main-padding);
+    position: relative;
+}
+
+.footer .container ul .title::after {
+    content: "";
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    bottom: 9px;
+    left: 0
+}
+
+
+.footer p {
+    text-align: center;
+    position: relative;
+}
+
+.footer .container ul:last-child li:not(:first-child) {
+    display: inline-block;
+}
+
+/* Peudo Classes */
+
+/* .test li:first-child {
+    background-color: red;
+}
+
+.test li:last-child {
+    background-color: green;
+}
+
+.test li:nth-child(2) {
+    background-color: blue;
+}
+
+.test li:nth-child(3) {
+    background-color: yellow;
+}
+li: */
+/* 
+.test li:not(:first-child) {
+    background-color: red;
+} */
+
+@media (min-width:0px) and (max-width:767px) {
+
+    .nav .container,
+    .nav .container .parent {
+        flex-flow: column;
+        gap: var(--main-gap)
+    }
+
+    .landing .child {
+        width: 95%;
+
+    }
+
+    .deals .container .box-container .box {
+        height: 25vh
+    }
+
+    .deals .container .box-container .secount {
+        width: 100%;
+    }
+
+    .deals .container .box-container .first {
+        width: 100%;
+    }
+
+    .cards .container .box {
+        width: 100%;
+    }
+
+    .footer .container {
+        flex-flow: column;
+    }
+
+    .footer .container ul {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer .container ul li.title::after {
+        left: calc(50% - 15px)
+    }
+
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    .cards .container .box {
+        width: calc((100% / 2) - (16px / 2));
+    }
+
+
+    .deals .container .box-container .box {
+        height: 25vh
+    }
+
+    .deals .container .box-container .secount {
+        width: calc((100% / 2) - (16px / 2));
+    }
+
+    .footer .container {
+        flex-flow: column;
+    }
+
+    .footer .container ul {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer .container ul li.title::after {
+        left: calc(50% - 15px)
+    }
+}
+
+@media (min-width:992px) and (max-width:1170px) {}
+
+.popUp {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+
+
+}
+
+.popUp span {
+    font-size: 24px;
+    color: white;
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    cursor: pointer
+}
+
+.popUp .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    gap: var(--main-gap)
+}
